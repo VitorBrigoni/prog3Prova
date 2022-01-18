@@ -11,7 +11,7 @@ class BlogController extends Controller
         $posts = Blog::orderBy('created_at', 'desc')->get();
         return view('blog.index', ['posts' => $posts, 'pagina' => 'blog']);
     }
-    // Função de Criação (Retorna a view)
+    // Função de Criação1 (Retorna a view)
     public function create()
     {
         return view('blog.create', ['pagina' => 'blog']);
